@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Mountains -->
+  <path d="M12 42 L24 26 L36 42 Z" fill="#8DB58C" /> <!-- Left mountain -->
+  <path d="M28 46 L40 30 L52 46 Z" fill="#7AA97A" /> <!-- Right mountain -->
+  
+  <!-- Clear Sky Circle -->
+  <circle cx="32" cy="18" r="10" fill="#A1C6EA" opacity="0.3" />
+  
+  <!-- Snow caps on mountains -->
+  <path d="M20 30 L24 26 L28 30 Z" fill="#FFFFFF" /> <!-- Left snow cap -->
+  <path d="M36 34 L40 30 L44 34 Z" fill="#FFFFFF" /> <!-- Right snow cap -->
+</svg>

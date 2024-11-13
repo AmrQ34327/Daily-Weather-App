@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="34" height="34">
+  <!-- Thermometer -->
+  <g fill="#FF0000"> <!-- Red color for the thermometer -->
+    <!-- Thermometer body -->
+    <rect x="28" y="10" width="8" height="40" rx="4" ry="4"/>
+    <!-- Thermometer bulb -->
+    <circle cx="32" cy="54" r="6"/>
+  </g>
+
+  <!-- Liquid in thermometer (Temperature level) -->
+  <g fill="#FF4500"> <!-- Orange color for the liquid -->
+    <rect x="30" y="14" width="4" height="12" rx="2" ry="2"/>
+  </g>
+</svg>

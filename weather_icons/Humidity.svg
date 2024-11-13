@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Example icon representing humidity, typically a water droplet -->
+  <g fill="#FFFFFF"> <!-- White color for good contrast on blue background -->
+    <!-- Water Droplet Shape -->
+    <path d="M32 8C32 8 20 24 20 32C20 40 26 46 32 46C38 46 44 40 44 32C44 24 32 8 32 8Z"/>
+    <circle cx="32" cy="32" r="5"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="34" height="34">
+  <!-- Wind Gusts (Straight Lines) -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="4">
+    <!-- First wind line -->
+    <line x1="8" y1="20" x2="24" y2="20" />
+    <!-- Second wind line -->
+    <line x1="16" y1="30" x2="32" y2="30" />
+    <!-- Third wind line -->
+    <line x1="24" y1="40" x2="40" y2="40" />
+    <!-- Fourth wind line -->
+    <line x1="32" y1="50" x2="48" y2="50" />
+  </g>
+</svg>

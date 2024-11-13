@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <g fill="#FFFFFF"> <!-- White clouds -->
+    <!-- First Cloud -->
+    <circle cx="10" cy="18" r="8"/>
+    <circle cx="18" cy="16" r="10"/>
+    <circle cx="26" cy="18" r="7"/>
+    
+    <!-- Second Cloud -->
+    <circle cx="38" cy="28" r="9"/>
+    <circle cx="46" cy="30" r="10"/>
+    <circle cx="54" cy="28" r="7"/>
+  </g>
+
+  <!-- Raindrops with Light Gray Color -->
+  <g fill="#FFFFFF"> <!-- White raindrops -->
+    <path d="M10,28 C9,30 8,32 10,34 C12,32 11,30 10,28 Z"/> <!-- Raindrop shape -->
+    <path d="M16,32 C15,34 14,36 16,38 C18,36 17,34 16,32 Z"/> <!-- Raindrop shape -->
+    <path d="M24,30 C23,32 22,34 24,36 C26,34 25,32 24,30 Z"/> <!-- Raindrop shape -->
+    <path d="M34,36 C33,38 32,40 34,42 C36,40 35,38 34,36 Z"/> <!-- Raindrop shape -->
+    <path d="M38,38 C37,40 36,42 38,44 C40,42 39,40 38,38 Z"/> <!-- Raindrop shape -->
+    <path d="M46,35 C45,37 44,39 46,41 C48,39 47,37 46,35 Z"/> <!-- Raindrop shape -->
+    <path d="M50,42 C49,44 48,46 50,48 C52,46 51,44 50,42 Z"/> <!-- Raindrop shape -->
+    <path d="M56,40 C55,42 54,44 56,46 C58,44 57,42 56,40 Z"/> <!-- Raindrop shape -->
+  </g>
+</svg>
+
