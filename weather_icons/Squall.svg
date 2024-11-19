@@ -1,0 +1,27 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 200 200"
+  width="200"
+  height="200"
+>
+  <defs>
+    <linearGradient id="squallGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF4500; stop-opacity:1" /> <!-- Orange Red -->
+      <stop offset="100%" style="stop-color:#FFD700; stop-opacity:1" /> <!-- Gold -->
+    </linearGradient>
+  </defs>
+
+  <!-- Cloud -->
+  <g fill="#FFFFFF">
+    <ellipse cx="100" cy="70" rx="30" ry="20" />
+    <ellipse cx="130" cy="70" rx="30" ry="20" />
+    <ellipse cx="115" cy="50" rx="40" ry="25" />
+  </g>
+
+  <!-- Curved Wind Lines -->
+  <g stroke="#FF6347" stroke-width="4">
+    <path d="M40,110 Q60,90 80,110 T120,110 T160,110" fill="none"/>
+    <path d="M30,130 Q50,110 70,130 T110,130 T150,130" fill="none"/>
+    <path d="M20,150 Q40,130 60,150 T100,150 T140,150" fill="none"/>
+  </g>
+</svg>

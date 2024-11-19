@@ -1,5 +1,7 @@
+import 'dart:convert';
 import 'package:geolocator/geolocator.dart';
 import 'package:geocoding/geocoding.dart';
+import 'package:http/http.dart' as http;
 
 
 Future<Position?> getLocation() async {
@@ -9,9 +11,6 @@ Future<Position?> getLocation() async {
   serviceEnabled = await Geolocator.isLocationServiceEnabled();
 
   if (!serviceEnabled) {
-    // Location services are not enabled don't continue
-    // accessing the position and request users of the
-    // App to enable the location services.
     return Future.error('Location services are disabled.');
   }
 
@@ -45,4 +44,20 @@ Future<String> getCityName(Position position) async {
   List<Placemark> placemarks =
       await placemarkFromCoordinates(latitude, longitude);
   return placemarks.first.locality.toString();
+}
+
+Future<String> translateCityName(String cityName, String chosenLangCode , double lat , double lon) async {
+   final url = Uri.parse(
+            "https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lon}&key=3c7e4ef5caf84d6f9ce0cfd17abf69e8&language=$chosenLangCode");
+   final response = await http.get(url);
+   if (response.statusCode == 200){
+    var body = json.decode(response.body);
+    var city = body["results"][0]["components"]["city"];
+    return city;
+   } else {
+    // or make it a return
+     throw Exception ("Failed to translate city name (HTTP ${response.statusCode})");
+   }     
+
+
 }
