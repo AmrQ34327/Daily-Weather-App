@@ -223,7 +223,7 @@ class _SettingsPageState extends State<SettingsPage> {
                   onTap: () {
                     setState(() {});
                   },
-                  dropdownColor: Colors.blue,
+                 dropdownColor: Theme.of(context).colorScheme.primary,
                   style: const TextStyle(
                       color: Colors.white,
                       fontSize: 14.0,

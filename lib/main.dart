@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
     final settings = Provider.of<SettingsProvider>(context, listen: true);
     double width2 = MediaQuery.of(context).size.width;
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: settings.getDarkMode
             ? ThemeData(
                 scaffoldBackgroundColor: const Color(0xFF121212),
@@ -47,7 +48,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 colorScheme: const ColorScheme.dark(
-                  primary: Color(0xFFBB86FC),
+                  primary: Color(0xFF1E1E1E),
                   onPrimary: Colors.black,
                   secondary: Color(0xFF03DAC6),
                   onSecondary: Colors.black,
@@ -83,6 +84,7 @@ class MyApp extends StatelessWidget {
                       color: Colors.white,
                     )),
                 colorScheme: ColorScheme.fromSeed(
+                  primary: Colors.blue,
                     seedColor: const Color.fromARGB(183, 19, 22, 207)),
                 useMaterial3: true,
                 appBarTheme: AppBarTheme(
@@ -143,7 +145,10 @@ class _MyHomePageState extends State<MyHomePage> {
         showedCity = await getCityName(position);
         var translations = await Future.wait([
           translateCityName(
-              showedCity!, "it", position.latitude, position.longitude),
+              showedCity!,
+              "it",
+              position.latitude,
+              position.longitude),
           translateCityName(
               showedCity!, "de", position.latitude, position.longitude),
         ]);
@@ -155,7 +160,7 @@ class _MyHomePageState extends State<MyHomePage> {
         });
       }
     } catch (e) {
-      print('Error: $e');
+      throw Exception ('Error: $e');
     }
   }
 
@@ -182,7 +187,7 @@ class _MyHomePageState extends State<MyHomePage> {
     //24 hour format here
     DateFormat dateFormat2 = DateFormat('EEEE, M, yyyy\nHH:mm');
     String showedDate2 = dateFormat2.format(now);
-    String countryCode = _weatherData?["sys"]["country"];
+    var countryCode = _weatherData?["sys"]["country"];
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
 

@@ -48,7 +48,7 @@ Future<String> getCityName(Position position) async {
 
 Future<String> translateCityName(String cityName, String chosenLangCode , double lat , double lon) async {
    final url = Uri.parse(
-            "https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lon}&key=3c7e4ef5caf84d6f9ce0cfd17abf69e8&language=$chosenLangCode");
+            "https://api.opencagedata.com/geocode/v1/json?q=$lat+$lon&key=3c7e4ef5caf84d6f9ce0cfd17abf69e8&language=$chosenLangCode");
    final response = await http.get(url);
    if (response.statusCode == 200){
     var body = json.decode(response.body);
