@@ -12,6 +12,7 @@ Daily Weather App built with Flutter. It provides current weather information, i
   - Wind speed can be shown in meters per second (m/s), kilometers per hour (km/h), or miles per hour (mph).
 - **SVG Icons**: Weather conditions are represented with clear and modern SVG icons for a visually appealing interface.
 - **User Settings Persistence**: User preferences (such as language, temperature units, and time format) are stored for data persistence, ensuring that settings are retained across app sessions.
+- **Responsive Design**: Utilizes MediaQuery to adapt the app's layout to different screen sizes ensuring an optimized user experience on devices of various dimensions.
 
 ## Screenshots
 | <img src="https://github.com/user-attachments/assets/2e3be931-0616-463e-b515-7e85dd6a1421" height="500" width="300" alt="screenshot1"> | <img src="https://github.com/user-attachments/assets/042cb832-f172-4b0a-9e86-7d47567f1931" height="500" width="300" alt="screenshot2"> |
