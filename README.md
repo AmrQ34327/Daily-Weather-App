@@ -31,7 +31,7 @@ Follow these steps to set up the project locally:
 
 2. **Navigate to the project directory**:
     ```bash
-    cd To-Do-List-App
+    cd Daily-Weather-App
     ```
 
 3. **Install the necessary dependencies**:
